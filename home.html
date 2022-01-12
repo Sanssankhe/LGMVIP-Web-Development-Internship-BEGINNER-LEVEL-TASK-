@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <title>Home Page</title>
+</head>
+
+<body>
+  <div class="container" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="images/homelogo.jpg" alt="" width="30" height="24"
+            class="d-inline-block align-text-top">
+          Let's Decor</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ideas">Ideas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <main>
+    <p>
+    <div id="home">
+      <section>
+        <img class="mySlides" src="images/frontpage.jpg" style="width:100%">
+        <img class="mySlides" src="images/frontpage1.jpg" style="width:100%">
+        <img class="mySlides" src="images/frontpage2.jpg" style="width:100%">
+        <img class="mySlides" src="images/frontpage3.jpg" style="width:100%">
+
+      </section>
+    </div>
+
+    <div id="about">
+      <h1 style="text-align: center; font-size: xx-large; color: white; padding-top: 50px;">Our Team</h1>
+      <h3 style="color: white;">Meet our exciting Team</h3>
+      <br>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="images/sans.png" alt="Sans" style="width:58%;">
+            <div class="container">
+              <h2>Ms.Sanskruti Sunil Sankhe</h2>
+              <p class="title">CEO & Founder</p>
+              <p>It Engineer</p>
+              <a href="mailto:sanssankhe@gmail.com">Mail Me</a>
+              <a href="https://www.linkedin.com/in/sanskruti-sankhe-554b621b5/" target="_blank"
+                style="font-size: medium;">
+                <button class="button"><i class="fa fa-linkedin" style="color: blue;"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="images/abc.jpg" alt="Mike" style="width:62%">
+            <div class="container">
+              <h2>Mr. John</h2>
+              <p class="title">Full stack developer</p>
+              <p>It Engineer</p>
+              <a href="mailto:sanssankhe@gmail.com">Mail Me</a>
+              <a href="https://www.linkedin.com/in/sanskruti-sankhe-554b621b5/" target="_blank"
+                style="font-size: medium;">
+                <button class="button"><i class="fa fa-linkedin" style="color: blue;"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="images/def.jpg" alt="John" style="width:65%">
+            <div class="container">
+              <h2>Mrs. Anita</h2>
+              <p class="title">Web Developer</p>
+              <p>Computer Engineer</p>
+              <a href="mailto:sanssankhe@gmail.com">Mail Me</a>
+              <a href="https://www.linkedin.com/in/sanskruti-sankhe-554b621b5/" target="_blank"
+                style="font-size: medium;">
+                <button class="button"><i class="fa fa-linkedin" style="color: blue;"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ideas">
+      <h1 style="padding-top: 50px;color: white;">Our Designs</h1>
+      <hr>
+
+
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('home')"> Full Home Decor</button>
+        <button class="btn" onclick="filterSelection('living')"> Living Room</button>
+        <button class="btn" onclick="filterSelection('pools')"> Pools</button>
+        <button class="btn" onclick="filterSelection('chair')">Swing Chair</button>
+        <button class="btn" onclick="filterSelection('washroom')">Wash Room</button>
+        <button class="btn" onclick="filterSelection('farm')">Farm House</button>
+
+
+      </div>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column home">
+          <div class="content">
+            <img src="images/house.jpg" style="width:100%">
+            <h4>Home Decor</h4>
+          </div>
+        </div>
+        <div class="column home">
+          <div class="content">
+            <img src="images/house2.jpg" style="width:100%">
+            <h4>Home</h4>
+          </div>
+        </div>
+
+        <div class="column living">
+          <div class="content">
+            <img src="images/livingroom.jpg" style="width:100%">
+            <h4>Living Room</h4>
+          </div>
+        </div>
+        <div class="column living">
+          <div class="content">
+            <img src="images/livingroom2.jpg" style="width:100%">
+            <h4>Living Room</h4>
+          </div>
+        </div>
+
+        <div class="column pools">
+          <div class="content">
+            <img src="images/pool.jpg" style="width:100%">
+            <h4>Pool</h4>
+          </div>
+        </div>
+        <div class="column pools">
+          <div class="content">
+            <img src="images/pool2.jpg" style="width:100%">
+            <h4>Pool for dogs</h4>
+          </div>
+        </div>
+        <div class="column chair">
+          <div class="content">
+            <img src="images/swing.jpg" style="width:100%">
+            <h4>Swing Chair</h4>
+          </div>
+        </div>
+        <div class="column chair">
+          <div class="content">
+            <img src="images/swing2.jpg" style="width:100%">
+            <h4>Swing Chair</h4>
+          </div>
+        </div>
+        <div class="column washroom">
+          <div class="content">
+            <img src="images/washroom.jpg" style="width:100%">
+            <h4>Washroom Designs</h4>
+          </div>
+        </div>
+        <div class="column washroom">
+          <div class="content">
+            <img src="images/washroom2.jpg" style="width:100%">
+            <h4>Washroom</h4>
+          </div>
+        </div>
+        <div class="column farmhouse">
+          <div class="content">
+            <img src="images/rawhouse.jpg" style="width:100%">
+            <h4>Raw House Ideas</h4>
+          </div>
+        </div>
+        <!-- END GRID -->
+      </div>
+
+    </div>
+
+    <div id="contact">
+      <div class="container-fluid flex-grow-1 flex-shrink-0">
+        <div class="px-lg-5">
+          <div class="row py-5">
+            <div class="col-lg-12 mx-auto text-white text-center">
+              <h1 class="display-4">Let's Decor</h1>
+              <p class="lead mb-0">Where dreams come true..</p>
+              <p class="lead">Ms.Sanskruti Sankhe
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-white">
+        <div class="container py-5">
+          <div class="row py-4">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <p class="font-italic text-muted">Smiles can also be spread through good design.
+              </p>
+              <ul class="list-inline mt-4" style="font-size: medium;">
+                <li class="list-inline-item"><a href="tel:8087450705" title="Call"><i class="fa fa-phone"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/sanskruti-sankhe-554b621b5/"
+                    target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.pinterest.com/sanssankhe" target="_blank"
+                    title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+              <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a href="#" class="text-muted">For Home</a></li>
+                <li class="mb-2"><a href="#" class="text-muted">For Offices</a></li>
+                <li class="mb-2"><a href="#" class="text-muted">Outdoor</a></li>
+                <li class="mb-2"><a href="#" class="text-muted">Our Designs</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+              <h6 class="text-uppercase font-weight-bold mb-4">Sans Architects</h6>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
+                <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
+                <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-lg-0">
+              <h6 class="text-uppercase font-weight-bold mb-4">Lets Talk</h6>
+              <p class="text-muted mb-4">The relation becomes strong when their are no barriers</p>
+              <div class="p-1 rounded border">
+                <div class="input-group">
+                  <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
+                    class="form-control border-0 shadow-0">
+
+                  <div class="input-group-append">
+                    <button id="button-addon1" type="submit" class="btn btn-link"><i
+                        class="fa fa-paper-plane"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyrights -->
+        <div class="bg-light py-4">
+          <div class="container text-center">
+            <p class="text-muted mb-0 py-0">© 2019 Let's Decor | All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+
+    </p>
+  </main>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="home.js"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
